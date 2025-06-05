@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import TabNavigator from "./components/TabNavigator";
+import TabContent from "./components/TabContent";
+import sunIcon from "./assets/sun.svg";
+import moonIcon from "./assets/moon.svg";
 
-function App() {
+type TabKey = "ancientPhilosophy" | "logic" | "introductionToPhilosophy";
+
+const App: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<TabKey>("ancientPhilosophy");
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const tabs = {
+    ancientPhilosophy: "Античная философия",
+    logic: "Логика",
+    introductionToPhilosophy: "Введение в философию",
+  };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${isDarkMode ? "dark-mode" : ""}`}>
+      <h1>Philosophy Exam Hub</h1>
+      <button onClick={toggleDarkMode} className="theme-toggle">
+        <img
+          src={isDarkMode ? sunIcon : moonIcon}
+          alt={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          className="theme-icon"
+        />
+        {isDarkMode ? "Light Mode" : "Dark Mode"}
+      </button>
+      <TabNavigator
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        tabs={tabs}
+      />
+      <TabContent activeTab={activeTab} />
     </div>
   );
-}
+};
 
 export default App;
