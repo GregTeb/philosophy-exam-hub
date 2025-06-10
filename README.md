@@ -88,27 +88,6 @@ Start the development server:
 npm start
 
 The app will be available at http://localhost:3000.
-
-Project Structure
-
-philosophy-exam-hub/
-├── public/                  # Static assets (e.g., favicon)
-├── src/
-│   ├── assets/             # Images (sun.svg, moon.svg for theme toggle)
-│   ├── components/         # React components
-│   │   ├── TabNavigator.tsx  # Tab navigation component
-│   │   └── TabContent.tsx    # Ticket display component
-│   ├── data/               # JSON data
-│   │   └── tickets.json    # Exam tickets data
-│   ├── types/              # TypeScript interfaces
-│   │   └── tickets.d.ts    # Interfaces for tickets
-│   ├── App.tsx             # Main app component
-│   ├── App.css             # Custom styles
-│   └── index.tsx           # Entry point
-├── README.md               # Project documentation
-├── package.json            # Dependencies and scripts
-└── tsconfig.json           # TypeScript configuration
-
 Usage
 
 
