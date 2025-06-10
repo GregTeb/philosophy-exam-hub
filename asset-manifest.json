@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/philosophy-exam-hub/static/css/main.ef6c2965.css",
+    "main.js": "/philosophy-exam-hub/static/js/main.28647659.js",
+    "static/js/453.17d4ac8e.chunk.js": "/philosophy-exam-hub/static/js/453.17d4ac8e.chunk.js",
+    "static/media/moon.svg": "/philosophy-exam-hub/static/media/moon.4a7c826ed974a559abbfe774db087863.svg",
+    "static/media/sun.svg": "/philosophy-exam-hub/static/media/sun.d871080062d6b0065535dca9660a2991.svg",
+    "index.html": "/philosophy-exam-hub/index.html",
+    "main.ef6c2965.css.map": "/philosophy-exam-hub/static/css/main.ef6c2965.css.map",
+    "main.28647659.js.map": "/philosophy-exam-hub/static/js/main.28647659.js.map",
+    "453.17d4ac8e.chunk.js.map": "/philosophy-exam-hub/static/js/453.17d4ac8e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef6c2965.css",
+    "static/js/main.28647659.js"
+  ]
+}
