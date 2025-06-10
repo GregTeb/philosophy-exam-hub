@@ -1,6 +1,6 @@
 import React from "react";
 
-type TabKey = "ancientPhilosophy" | "logic" | "introductionToPhilosophy";
+type TabKey = "ancientPhilosophy" | "logic";
 
 interface TabNavigatorProps {
   activeTab: TabKey;

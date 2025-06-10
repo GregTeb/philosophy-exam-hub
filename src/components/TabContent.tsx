@@ -2,7 +2,7 @@ import React from "react";
 import ticketsData from "../data/tickets.json";
 import { TabContentData, Ticket } from "../types/tickets";
 
-type TabKey = "ancientPhilosophy" | "logic" | "introductionToPhilosophy";
+type TabKey = "ancientPhilosophy" | "logic";
 
 interface TabContentProps {
   activeTab: TabKey;

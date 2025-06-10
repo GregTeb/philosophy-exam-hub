@@ -5,7 +5,7 @@ import TabContent from "./components/TabContent";
 import sunIcon from "./assets/sun.svg";
 import moonIcon from "./assets/moon.svg";
 
-type TabKey = "ancientPhilosophy" | "logic" | "introductionToPhilosophy";
+type TabKey = "ancientPhilosophy" | "logic";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabKey>("ancientPhilosophy");
@@ -14,7 +14,6 @@ const App: React.FC = () => {
   const tabs = {
     ancientPhilosophy: "Античная философия",
     logic: "Логика",
-    introductionToPhilosophy: "Введение в философию",
   };
 
   const toggleDarkMode = () => {
